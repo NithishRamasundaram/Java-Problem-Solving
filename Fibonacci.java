@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the fibo number:");
+        System.out.println("Enter the fibo series:");
         int n=sc.nextInt();
         int a=0;
         int b=1;
@@ -13,7 +13,8 @@ public class Fibonacci {
             a=b;
             b=sum;
         }
-        //System.out.println(sum);   For sum of the fibo series
-
+        System.out.println();
+        System.out.print("Sum of the series:");
+        System.out.print(sum);
     }
 }
