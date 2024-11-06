@@ -4,25 +4,25 @@ public class Prime_number {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number:");
         int n=sc.nextInt();
-        int a=0;
-        if(n<=1){
-            System.out.println("Invalid number");
-        }
-        else{
-            for (int i=2;i<n;i++){
+        int a=1;
+        if (n<=1){
+            System.out.println("Invalid");
+        }else {
+            for(int i=2;i<n;i++){
                 if(n%i==0){
                     a=0;
                     break;
                 }
-                else{
+                else {
                     a=1;
                 }
             }
-        }if(a==0){
-            System.out.println("Not a prime number");
+
         }
-        else{
-            System.out.println("Prime number");
+        if(a==1){
+            System.out.println("Given number is prime");
+        }else {
+            System.out.println("Given number is not a prime");
         }
     }
 }
